@@ -1,0 +1,26 @@
+Buffer files:
+A bounded-buffer abstract type to encapsulate all of the implementation details of the buffer and export functions "deposit" and "remove"
+
+- buffer.h
+- buffer.c
+
+Processing file:
+Starts the 4 threads to process characters from input stream or file (if given a file as an argument into the running process). 
+First thread reads character from input stream. 
+Second thread strips newlines and replace them with spaces.
+Third thread strips consecutive asterixes and replace them with ^ .
+Fourth thread sends 80 character lines (81 if including newline character) to output stream which is stdout.
+- HW4.c
+
+Testing:
+- To compile: 
+  gcc HW4.c buffer.c libst.a semaphore.o -o HW4
+- To test from stdin:
+  HW4
+- To test with all test files:
+  test_all.csh
+- To check differences from the test results with standard test results:
+  diff_all.csh
+
+
+

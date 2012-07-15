@@ -1,0 +1,11 @@
+Program file is warmup.c
+To run:
+1. Compile the file using 
+   gcc warmup.c -o warmup
+2. warmup
+
+To run with test files (located in /afs/cs.unc.edu/home/alexisc/comp530/submissions/HW1/test/)
+
+Run
+warmup test/<insert_test_file_name_here>
+

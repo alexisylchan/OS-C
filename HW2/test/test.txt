@@ -1,0 +1,20 @@
+echo ls -a 
+ls -a
+echo ls -ltr
+ls -ltr
+echo ~
+~
+echo .t
+.t
+echo find . -name *shell*
+find . -name *shell*
+echo gawk
+gawk
+echo man
+man
+echo pwd
+pwd
+echo alexisc
+echo 'cd ..'
+echo alias
+alias

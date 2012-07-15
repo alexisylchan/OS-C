@@ -1,0 +1,26 @@
+HW50.c :
+Reads character from input stream and sends it to stdout. First process in the pipeline.
+HW51.c :
+Reads character from input stream, replaces newlines with a space. Sends it to stdout. Second process in the pipeline.
+HW52.c :
+Reads character from input stream, replaces 2 consecutive asterixes with a ^. Sends it to stdout. Third process in the pipeline.
+HW53.c :
+Reads character from input stream, accumulates up to 80 characters. Sends 80 character streams to stdout. Fourth process in the pipeline.
+
+
+Testing:
+- To compile: 
+  gcc HW50.c  -o hw50
+  gcc HW51.c  -o hw51
+  gcc HW52.c  -o hw52
+  gcc HW53.c  -o hw53
+  
+- To test from stdin:
+  hw50 | hw51 | hw52 | hw53
+- To test with all test files:
+  test_all.csh
+- To check differences from the test results with standard test results:
+  diff_all.csh
+
+
+

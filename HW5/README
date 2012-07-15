@@ -1,0 +1,20 @@
+HW5.c :
+Starts the 4 processes to process characters from input stream or file (if given a file as an argument into the parent process).
+First process reads character from input stream.
+Second process strips newlines and replace them with spaces.
+Third process strips consecutive asterixes and replace them with ^ .
+Fourth process sends 80 character lines (81 if including newline character) to output stream which is stdout.
+
+
+Testing:
+- To compile: 
+  gcc HW5.c  -o HW5
+- To test from stdin:
+  HW5
+- To test with all test files:
+  test_all.csh
+- To check differences from the test results with standard test results:
+  diff_all.csh
+
+
+

@@ -1,0 +1,14 @@
+Program file is 530shell.c
+
+Implemented forking of child process. Child process expects the first input argument to be a full file path. If the first input argument is not a valid file path (using the stat command), child process assumes that the first input argument could be a file name and appends each entry in the environment PATH (using the getenv command) to the first input argument. If the first input argument is not in any of the path entries in the environment's PATH, then the child process prints an error message to the stdout.
+ 
+To run:
+1. Compile the file using 
+   gcc 530shell.c -o 530shell
+2. 530shell
+
+To run with test files (located in /afs/cs.unc.edu/home/alexisc/comp530/submissions/HW2/test/)
+
+Run
+530shell test/<insert_test_file_name_here>
+
